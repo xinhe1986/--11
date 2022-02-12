@@ -1,0 +1,19 @@
+ <script type="text/javascript">
+			var str = "b123456";
+			console.log(/^[by]\d{6}$/.test(str));
+		// 请验证字符串是否有五位字母，且字母可以大小写
+			var str1 = "abcde";
+			var str2 = "abcd2"
+			console.log(/^[a-zA-Z]{5}$/.test(str1));
+			console.log(/^[a-zA-Z]{5}$/.test(str2));
+		// 请验证某字符串是否是五位数，且仅由小写字母和点构成
+			var str3 = "mvp..";
+			console.log(/^[a-z\.]{5}$/.test(str3));
+		// 请验证某字符串是否为四位小写字母，且最后以为不能是m字母
+			var str4 = "abcd";
+			var str5 = "abcm";
+			var str6 = "ab#d"
+			console.log(/^[a-z]{3}[a-ln-z]{1}$/.test(str4));
+			console.log(/^[a-z]{3}[a-ln-z]{1}$/.test(str5));
+			console.log(/^[a-z]{3}[a-ln-z]{1}$/.test(str6));
+</script>
